@@ -1,0 +1,9 @@
+%h1#welcome Welcome to Wordcount!
+
+%form{:action => "count", :method => "post"}
+	#input_label
+		%label Type some words:
+	#input_area
+		%textarea{:name => "input_text"}
+	#submit_area
+		%input#submit_button{:type => "submit", :value => "Submit"}

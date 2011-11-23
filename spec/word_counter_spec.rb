@@ -30,5 +30,24 @@ describe WordCounter do
         counts = WordCounter.count_words_on card
         counts.should == {}
     end
+    
+    it "detects !" do
+        card = "dog!"
+        counts = WordCounter.count_words_on card
+        counts.should == {"DOG" => 1}
+    end
+    
+    it "counts words with apostrophes" do
+        card = "she'll"
+        counts = WordCounter.count_words_on card
+        counts.should == {"SHE'LL" => 1}
+    end
+    
+    it "detects ?" do
+        card = "dog?"
+        counts = WordCounter.count_words_on card
+        counts.should == {"DOG" => 1}
+    end
+    
         
 end

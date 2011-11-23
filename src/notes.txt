@@ -1,0 +1,45 @@
+New feature:
+
+# words in the document total
+# sentences
+# paragraphs
+# aggregate statistics per sentence/paragraph
+
+
+"", ''
+
+You --dude. -- 
+
+/^(.*)[\.?!]/
+
+Yo! - 1
+Yo yo ma? Dude! - 2
+Yo mama. Yo! Wot? - 3
+She said, "Wait!" - sentence count 1
+She said, "Wait! I need some coffee." - 1
+She said, "Jon said 'Hello.'" - 1
+
+count words
+sort
+
+As a book publisher
+I want to know how many sentences are in the document
+so that I can estimate the number of pages in the book. 
+
+
+Backlog
+
+A warning if the book exceeds some threshold to be suitable for readers age 6 - 8.
+
+
+Word starts with a letter.
+Word ends at space
+Word ends at . ? ! , double quote, or single quote followed by whitespace (EOF == whtespace)
+
+ruby-guru
+ruby-!?guru
+[:space:] all whitespace
+[:punct:] not sure
+[:alpha:]
+
+[:alpha:][:alpha:|:punct:][:alpha:]
